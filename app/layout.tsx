@@ -8,15 +8,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <ThemeProvider>
-      <html lang="es" className="h-full antialiased">
-        <body className="min-h-full flex flex-col bg-white text-gray-900 dark:bg-gray-900 dark:text-white transition-colors duration-300">
+    <html lang="es" className="h-full antialiased">
+      <body className="min-h-full flex flex-col bg-white text-gray-900 dark:bg-gray-900 dark:text-white transition-colors duration-300">
+        <ThemeProvider>
           <Navbar />
           <main className="flex-1 container mx-auto p-4">
             {children}
           </main>
-        </body>
-      </html>
-    </ThemeProvider>
+        </ThemeProvider>
+      </body>
+    </html>
   );
 }
