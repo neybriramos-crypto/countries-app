@@ -1,19 +1,13 @@
 /** @type {import('tailwindcss').Config} */
-const config = {
+module.exports = {
+  darkMode: "class",
   content: [
-    "./app/**/*.{js,ts,jsx,tsx}",
-    "./assets/components/**/*.{js,jsx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./context/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-      colors: {
-        primary: '#1e40af', // Ejemplo: azul
-        secondary: '#f59e0b', // Ejemplo: amarillo
-      },
-    },
+    extend: {},
   },
-  darkMode: "class",
   plugins: [],
 };
-
-export default config;
